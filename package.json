@@ -38,7 +38,7 @@
     "vue": "^3.0.0"
   },
   "dependencies": {
-    "@ayase/vc-util": "^0.0.3",
+    "@ayase/vc-util": "^0.0.4",
     "@babel/runtime": "^7.11.2",
     "utility-types": "^3.10.0",
     "vue-types": "^3.0.0"
