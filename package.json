@@ -1,6 +1,6 @@
 {
   "name": "@ayase/vc-motion",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Vue lifecycle controlled motion library",
   "author": "PeckZeg <peck.zeg@gmail.com>",
   "license": "MIT",
