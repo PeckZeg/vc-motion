@@ -224,11 +224,15 @@ export default function useStatus(
   });
 
   // Trigger `onVisibleChanged`
-  watch([asyncVisible, status] as const, ([asyncVisible, status]) => {
-    if (asyncVisible !== undefined && status === STATUS_NONE) {
-      props.onVisibleChanged?.(asyncVisible);
-    }
-  });
+  watch(
+    [asyncVisible, status] as const,
+    ([asyncVisible, status]) => {
+      if (asyncVisible !== undefined && status === STATUS_NONE) {
+        props.onVisibleChanged?.(asyncVisible);
+      }
+    },
+    { immediate: true }
+  );
 
   // ============================ Styles ============================
   if (eventHandlers.value[STEP_PREPARE] && step.value === STEP_START) {

@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  setupFiles: ['./tests/setup.js'],
   testEnvironment: 'jsdom',
   preset: 'ts-jest',
 
